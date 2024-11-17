@@ -643,9 +643,9 @@ static int pmw3610_report_data(const struct device *dev) {
     }else if (movement_size > 4) {
         speed_multiplier = 0.9;
     }else if (movement_size > 3) {
-        speed_multiplier = 0.4;
+        speed_multiplier = 0.7;
     }else if (movement_size > 2) {
-        speed_multiplier = 0.2;
+        speed_multiplier = 0.5;
     }else if (movement_size > 1) {
         speed_multiplier = 0.1;
     }
