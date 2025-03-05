@@ -4,6 +4,8 @@ zephyr_library_sources_ifdef(CONFIG_PMW3610 src/pmw3610.c)
 
 zephyr_include_directories(${APPLICATION_SOURCE_DIR}/include)
 
+target_include_directories(zmk-pmw3610-driver-sayu PRIVATE ${ZEPHYR_BASE}/include)
+
 add_library(zmk-pmw3610-driver-sayu STATIC
     src/pmw3610.c
 )
