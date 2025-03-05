@@ -18,3 +18,16 @@ properties:
   automouse-layer:
     type: int
     default: -1
+  cpi: # add teraknights
+    type: int
+    default: 600
+    description: "CPI value (Range: 200 - 3200, Step: 200)"
+  evt-type:
+    type: int
+    required: true
+  x-input-code:
+    type: int
+    required: true
+  y-input-code:
+    type: int
+    required: true
