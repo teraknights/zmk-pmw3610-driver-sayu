@@ -18,5 +18,3 @@ target_sources(${ZEPHYR_CURRENT_LIBRARY} PRIVATE src/pmw3610.c)
 
 target_link_libraries(${ZEPHYR_CURRENT_LIBRARY} PRIVATE zmk)
 
-target_sources(${ZEPHYR_CURRENT_LIBRARY} PRIVATE ${ZMK_BASE}/app/src/keymap.c)
-
