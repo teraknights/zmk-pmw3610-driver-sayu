@@ -5,5 +5,5 @@ zephyr_library_sources_ifdef(CONFIG_PMW3610 src/pmw3610.c)
 
 zephyr_include_directories(${APPLICATION_SOURCE_DIR}/include)
 
-# これを追加
-target_link_libraries(zmk-pmw3610-driver PRIVATE app)
+# ここを修正: zephyr_link_libraries を使用
+zephyr_link_libraries(app)
