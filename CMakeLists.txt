@@ -5,5 +5,4 @@ zephyr_library_sources_ifdef(CONFIG_PMW3610 src/pmw3610.c)
 
 zephyr_include_directories(${APPLICATION_SOURCE_DIR}/include)
 
-# ここを修正: zephyr_link_libraries を使用
-zephyr_link_libraries(app)
+message(STATUS "APPLICATION_SOURCE_DIR: ${APPLICATION_SOURCE_DIR}")
