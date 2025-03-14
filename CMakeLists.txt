@@ -15,7 +15,7 @@ HEADER_DIRECTORIES(header_dir_list)
 list(LENGTH header_dir_list header_dir_list_count)
 message(STATUS "Count: ${header_dir_list_count}")
 # リスト一覧出力
-message(${header_dir_list})
+message(STATUS "++++List++++: ${header_dir_list}")
 
 zephyr_library()
 
